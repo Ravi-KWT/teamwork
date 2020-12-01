@@ -1,0 +1,63 @@
+.nav-tabs {
+    padding: 0px;
+    margin: 0 0 30px;
+    border-bottom: 1px solid;
+    @include border-bottom-color('tabsborder');
+    > li {
+        margin-left: 15px;
+        margin-bottom: 0px;
+        a {
+            border: 0px;
+            border-top: 3px solid;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: $pfdintextpro;
+            @include font-size(14px);
+            @include border-top-color('tabsborder');
+            @include background-color('tabbg');
+            @include color('tabtext');
+            &:hover,
+            &:focus {
+                @include border-top-color('tabsborder');
+                @include background-color('tabbg');
+                @include color('tabtext');
+            }
+        }
+        &.active {
+            a {
+                border: 0px;
+                @include border-top-color('tabsborderactive');
+                @include background-color('tabbgactive');
+                @include color('tabtextactive');
+                &:hover,
+                &:focus {
+                    border: 0px;
+                    @include border-top-color('tabsborderactive');
+                    @include background-color('tabbgactive');
+                    @include color('tabtextactive');
+                }
+            }
+        }
+        &:focus {
+            a {
+                border: 0px;
+                @include border-top-color('tabsborderactive');
+                @include background-color('tabbgactive');
+                @include color('tabtextactive');
+                &:hover,
+                &:focus {
+                    border: 0px;
+                    @include border-top-color('tabsborderactive');
+                    @include background-color('tabbgactive');
+                    @include color('tabtextactive');
+                }
+            }
+        }
+    }
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover{
+    border-top: 3px solid;
+}

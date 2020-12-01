@@ -1,0 +1,110 @@
+.panel {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    &.panel-transparent {
+        border: 1px solid;
+        @include border-color('paneltransborder');
+        @include background-color('paneltrans');
+        margin-bottom: 20px;
+        .panel-heading {
+            @include background-color('paneltransheading');
+            .panel-title {
+                font-family: $pfdintextpro;
+                font-weight: 700;
+                float: left;
+                @include font-size(16px);
+                text-transform: uppercase;
+                padding-top: 6px;
+                @include color('paneltranstitle');
+                a{
+                    @include color('paneltransheadinglink');
+                }
+            }
+            .action {
+                float: right;
+                [class^="cols"],
+                [class*="cols"] {
+                    padding: 0px;
+                    float: left;
+                    margin-left: 15px;
+                }
+            }
+        }
+        .panel-body {
+            padding: 15px;
+            border: 0px;
+            @include background-color('paneltransbody');
+            @include color('panelbodytranstext');
+        }
+        .panel-footer{
+            @include background-color('paneltransfooter');
+            @include color('paneltransfootertext');
+            @include border-top-color('paneltransfooterborder');
+        }
+    }
+    &.panel-gray {
+        border: 1px solid;
+        @include border-color('panelgrayborder');
+        @include background-color('panelgray');
+        margin-bottom: 20px;
+        .panel-heading {
+            border-bottom: 1px solid;
+            @include background-color('panelgrayheading');
+            @include border-bottom-color('panelgrayheadingborder');
+            padding:0px;
+            .panel-title {
+                font-family: 'pfdintextpro';
+                font-weight: 700;
+                @include font-size(16px);
+                text-transform: uppercase;
+                display: block;
+                float: none !important;
+                padding: 10px;
+                @include color('panelgraytitle');
+                a {
+                    display: block;
+                    padding: 10px 15px;
+                    position: relative;
+                     @include color('panelgrayheadinglink');
+                    &:after {
+                        content: "\f077";
+                        font-family: 'FontAwesome';
+                        position: absolute;
+                        right: 15px;
+                    }
+                    &.collapsed {
+                        &:after {
+                            content: "\f078";
+                            font-family: 'FontAwesome';
+                            position: absolute;
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .panel-body {
+            padding: 15px;
+            border: 0px;
+            @include background-color('panelgraybody');
+            @include color('panelgraybodytext');
+        }
+        .panel-footer{
+            @include background-color('panelgrayfooter');
+            @include border-top-color('panelgrayfooterborder');
+            @include color('panelgrayfootertext');
+        }
+    }
+    .panel-collapse{
+        .panel-body{
+            padding: 15px;
+        }
+        &.in{
+            .panel-body{
+                padding: 15px;
+                border: 0px;
+            }
+        }
+    }
+}

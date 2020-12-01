@@ -1,0 +1,108 @@
+.page-sidebar {
+    width: 250px;
+    @include background-color('sidebarbg');
+    @include color('sidebartext');
+    left: 0;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    z-index: 1000;
+    transform:inherit;
+    padding: 159px 0px 0px;
+    .sidebar-header {
+        padding: 15px;
+        margin: 0px;
+        width: 220px;
+        display: none;
+        img {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .panel {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        position: relative;
+        .badge {
+            position: absolute;
+            right: 0px;
+            top: 5px;
+            @include background-color('sidebarbadge');
+            @include color('sidebarbadgetext');
+            @include font-size(14px);
+            border-radius: 0px;
+            font-weight: normal;
+            width: 35px;
+            text-align: center;
+        }
+        .panel-heading {
+            padding: 5px 0px 10px 0px;
+            margin: 0;
+            min-height: inherit;
+            @include font-size(16px);
+            border-bottom: 1px solid;
+            @include border-bottom-color('sidebarborder');
+            text-transform: uppercase;
+            .title{
+                max-width: 180px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+            }
+            a {
+                @include color('sidebarlink');
+            }
+        }
+        .panel-body {
+            padding: 15px 0px;
+            margin: 0;
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    position: relative;
+                    padding-left: 20px;
+                    a {
+                        padding: 6px 40px 6px 0px;
+                        display: block;
+                        @include font-size(14px);
+                        max-width: 180px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        @include color('sidebarlink');
+                        &:before {
+                            content: '\f123';
+                            font-family: 'FontAwesome';
+                            @include font-size(14px);
+                            position: absolute;
+                            left: 0;
+                            top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond(sm){
+        display: none;
+        left: -250px;
+    }
+    @include respond(xs){
+        display: none;
+        left: -250px;
+    }
+    @include respond(x){
+        display: none;
+        left: -250px;
+    }
+    &.in{
+        left: 0;
+    }
+}
+

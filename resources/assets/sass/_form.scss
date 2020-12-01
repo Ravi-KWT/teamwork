@@ -1,0 +1,152 @@
+input[type=checkbox] {
+	visibility: hidden;
+}
+input[type=radio] {
+	// visibility: hidden;
+}
+.checkbox {
+	position: relative;
+    margin: 0px;
+}
+.checkbox label {
+	cursor: pointer;
+}
+.checkbox label:after {
+	opacity: 1;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+    top: 0px;
+    left: 2px;
+    content: "\f096";
+    font-family: 'FontAwesome';
+    @include color('link');
+}
+.checkbox input[type=checkbox]:checked + label:after {
+    content: "\f046";
+    font-family: 'FontAwesome';
+    @include color('checkbox');
+}
+.radio {
+    width: auto;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+.radio label {
+    cursor: pointer;
+    width: auto;
+    padding-left:0px;
+    display: inline-block;
+}
+.radio label:after {
+    opacity: 1;
+    content: '\f10c';
+    font-family: 'FontAwesome';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    left:0px;
+    @include color('link');
+}
+.radio input[type=radio]:checked + label:after{
+    opacity: 1;
+    content: '\f192';
+    font-family: 'FontAwesome';
+    @include color('radio');
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"]{
+    margin: 0px;
+    visibility: hidden;
+    position: relative;
+}
+.label-title{
+    display: block;
+    margin-bottom: 15px;
+}
+.form-group{
+    label{
+        display: block;
+
+    }
+    .radio{
+        label{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+.label{
+    text-align: left;
+    padding: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: none;
+    @include font-size(13px);
+    text-transform: uppercase;
+    @include color('formlabel');
+    &.block{
+        display: block;
+    }
+    &.inline{
+        display: inline-block;
+    }
+}
+.labels{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 3px 5px 0;
+    text-transform: uppercase;
+    @include font-size(12px);
+    @include color('formlabel');
+}
+.form-control{
+    box-shadow: none;
+    border: 1px solid;
+    @include font-size(14px);
+    @include border-radius(3px);
+    @include background-color('formcontrol');
+    @include border-color('formcontrolborder');
+    &:hover, &:focus{
+        outline: none;
+        box-shadow: none;
+        @include border-color('formcontrolfocus');
+    }
+}
+
+.form{
+    @include font-size(16px);
+    legend{
+        @include font-size(16px);
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0 15px;
+    }
+    .form-group{
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+    span.label{
+        color: #000;
+    }
+    .label{
+        text-align: left;
+        padding: 0;
+        margin-bottom: 5px;
+        font-weight: 600;
+        text-transform: none;
+        @include font-size(13px);
+        text-transform: uppercase;
+        @include color('formlabel');
+        &.block{
+            display: block;
+        }
+        &.inline{
+            display: inline-block;
+        }
+    }
+}

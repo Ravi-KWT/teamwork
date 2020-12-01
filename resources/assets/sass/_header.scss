@@ -1,0 +1,169 @@
+.header {
+    padding: 0px;
+    @include background-color('headerbg');
+    z-index: 1020;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    transition: transform 200ms linear;
+    &.nav-down {
+        transform: translateY(0%);
+    }
+    &.nav-up {
+        transform: translateY(-100%);
+    }
+    .togg{
+        display: none;
+    }
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        margin: 0 15px 0 0;
+    }
+    .navbar{
+        margin-bottom: 0px;
+        border-radius: 0px;
+        border: 0px;
+        min-height: inherit;
+        padding: 0px;
+    }
+    .navbar-header{
+        margin: 0px;
+    }
+    .navbar-brand{
+        padding: 10px 0px;
+        margin: 0 15px 0 0;
+        height: auto;
+        @include respond(lg){
+            width: 250px;
+        }
+        @include respond(md){
+            width: 250px;
+        }
+        @include respond(sm){
+            width: 250px;
+        }
+        @include respond(xs){
+            width: 250px;
+        }
+        @include respond(x){
+            width: 200px;
+        }
+    }
+    .navbar-collapse{
+        padding: 0;
+        float: left;
+        @include respond(sm){
+            display: none !important;
+        }
+        &.in{
+            @include respond(sm){
+                display: block !important;
+                width: 100%;
+            }
+        }
+        @include respond(xs){
+            float: none;
+        }
+        @include respond(x){
+            float: none;
+        }
+    }
+    .navbar-right{
+        margin-right: 0px;
+    }
+    .navbar-toggle{
+        display: none;
+        margin: 0px;
+        @include respond(sm){
+            display: block;
+        }
+        @include respond(xs){
+            display: block;
+        }
+        @include respond(x){
+            display: block;
+        }
+    }
+    .navbar-nav{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        float: none;
+        > li {
+            margin:0px 5px;
+            position: relative;
+            > a {
+                background-color: transparent;
+                border-bottom: 5px solid;
+                @include border-bottom-color('headerborder');
+                @include font-size(16px);
+                @include color('headerlink');
+                display: block;
+                padding: 27px 5px 26px;
+                line-height: normal;
+            }
+            &.dropdown{
+                &:hover{
+                    .dropdown-menu{
+                        display: block;
+                    }
+                }
+            }
+            &.active {
+                a{
+                    border-bottom: 5px solid;
+                    @include border-bottom-color('headeractiveborder');
+                }
+                .dropdown-menu{
+                    li{
+                        a{
+                            border-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-profile {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        @include respond(x){
+            position: relative;
+            right: inherit;
+            top: inherit;
+        }
+        .dropdown{
+            padding: 13px 0px;
+        }
+        .name {
+            display: inline-block;
+            margin-right: 5px;
+            @include color('headerlink');
+        }
+        img{
+            @include border-radius(100px);
+            width: 40px;
+            height: 40px;
+        }
+        .btn{
+            padding: 0px;
+            height: auto;
+            line-height: normal;
+            @include font-size(16px);
+        }
+        @include respond(sm){
+            float: none !important;
+        }
+    }
+}
+.jumbotron {
+    @include background-color('header');
+    display: none;
+    .breadcrumb {
+        padding: 0px;
+        background-color: transparent;
+        @include color('text');
+        margin: 0;
+    }
+}

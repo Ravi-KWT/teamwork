@@ -1,0 +1,134 @@
+/* placeholder */
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content;}
+    &:-moz-placeholder {@content;}
+    &::-moz-placeholder {@content;}
+    &:-ms-input-placeholder {@content;}
+}
+/* ellipsis */
+@mixin ellipsis ($max-width){
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* media setting start */
+@mixin respond($breakpoint) {
+  @if $breakpoint == "x" {
+    @media (min-width: 300px) and (max-width: 479px){
+      @content;
+    }
+  }
+  @if $breakpoint == "xs" {
+    @media (min-width: 480px) and (max-width: 767px){
+      @content;
+    }
+  }
+  @if $breakpoint == "sm" {
+    @media (min-width: 768px) and (max-width: 999px){
+      @content;
+    }
+  }
+  @if $breakpoint == "md" {
+    @media (min-width: 1000px) and (max-width: 1139px) {
+      @content;
+    }
+  }
+  @if $breakpoint == "lg" {
+    @media (min-width: 1140px){
+      @content;
+    }
+  }
+}
+/* media setting close */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@function calculateRem($size) {
+  $remSize: $size / $base_font_size;
+  @return $remSize * 1em;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+/* transition */
+@mixin trans($val...) {
+    -webkit-transition: $val;
+    -moz-transition: $val;
+    -o-transition: $val;
+    transition: $val;
+}
+
+@mixin opacity($color, $opacity: 0.3) {
+    background: rgba($color, $opacity);
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin gradient-vertical($start-color: #555 , $end-color: #555, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Opera 12
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+}
+
+@mixin themify($property, $key, $themes: $themes) {
+  @each $theme, $colors in $themes {
+    .#{$theme} & {
+      #{$property}: map-get($colors, $key);
+    }
+  }
+}
+
+@mixin border-color($arguments...) {
+  @include themify('border-color', $arguments...);
+}
+@mixin border-top-color($arguments...) {
+  @include themify('border-top-color', $arguments...);
+}
+@mixin border-bottom-color($arguments...) {
+  @include themify('border-bottom-color', $arguments...);
+}
+@mixin border-left-color($arguments...) {
+  @include themify('border-left-color', $arguments...);
+}
+@mixin border-right-color($arguments...) {
+  @include themify('border-right-color', $arguments...);
+}
+@mixin color($arguments...) {
+  @include themify('color', $arguments...);
+}
+@mixin background-color($arguments...) {
+  @include themify('background-color', $arguments...);
+}
+@mixin gradients($arguments...) {
+  @include themify('background-image', $arguments...);
+}
+
+
+@mixin breakpoint( $max_min , $point ) {
+  @if $max_min==min{
+    @media ( min-width: ($point + px) ) {
+      @content;
+    }
+  } @if $max_min==max{
+    @media ( max-width: ($point + px) ) {
+      @content;
+    }
+  }
+}

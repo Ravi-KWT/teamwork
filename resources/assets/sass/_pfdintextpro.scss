@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'pfdintextpro';
+    src: local(Pfdintextpro Bold), url('#{$pfdintextpro-font-path}pfdintextpro-bold-webfont.eot');
+    src: url('#{$pfdintextpro-font-path}pfdintextpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-bold-webfont.woff2') format('woff2'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-bold-webfont.woff') format('woff'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-bold-webfont.ttf') format('truetype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-bold-webfont.svg#pf_dintext_probold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfdintextpro';
+    src: local(Pfdintextpro Light), url('#{$pfdintextpro-font-path}pfdintextpro-light-webfont.eot');
+    src: url('#{$pfdintextpro-font-path}pfdintextpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-light-webfont.woff2') format('woff2'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-light-webfont.woff') format('woff'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-light-webfont.ttf') format('truetype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-light-webfont.svg#pf_dintext_prolight') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfdintextpro';
+    src: local(Pfdintextpro Hariline), url('#{$pfdintextpro-font-path}pfdintextpro-hairline-webfont.eot');
+    src: url('#{$pfdintextpro-font-path}pfdintextpro-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-hairline-webfont.woff2') format('woff2'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-hairline-webfont.woff') format('woff'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-hairline-webfont.ttf') format('truetype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-hairline-webfont.svg#pf_dintext_prohairline') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfdintextpro';
+    src: local(Pfdintextpro ital), url('#{$pfdintextpro-font-path}pfdintextpro-italic-webfont.eot');
+    src: url('#{$pfdintextpro-font-path}pfdintextpro-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-italic-webfont.woff2') format('woff2'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-italic-webfont.woff') format('woff'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-italic-webfont.ttf') format('truetype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-italic-webfont.svg#pf_dintext_proitalic') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfdintextpro';
+    src: local(Pfdintextpro Boldita), url('#{$pfdintextpro-font-path}pfdintextpro-boldital-webfont.eot');
+    src: url('#{$pfdintextpro-font-path}pfdintextpro-boldital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-boldital-webfont.woff2') format('woff2'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-boldital-webfont.woff') format('woff'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-boldital-webfont.ttf') format('truetype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-boldital-webfont.svg#pf_dintext_probold_italic') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfdintextpro';
+    src: local(Pfdintextpro Lightita), url('#{$pfdintextpro-font-path}pfdintextpro-lightitalic-webfont.eot');
+    src: url('#{$pfdintextpro-font-path}pfdintextpro-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-lightitalic-webfont.woff2') format('woff2'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-lightitalic-webfont.woff') format('woff'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-lightitalic-webfont.ttf') format('truetype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-lightitalic-webfont.svg#pf_dintext_prolight_italic') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfdintextpro';
+    src: local(Pfdintextpro mediita), url('#{$pfdintextpro-font-path}pfdintextpro-meditalic-webfont.eot');
+    src: url('#{$pfdintextpro-font-path}pfdintextpro-meditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-meditalic-webfont.woff2') format('woff2'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-meditalic-webfont.woff') format('woff'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-meditalic-webfont.ttf') format('truetype'),
+         url('#{$pfdintextpro-font-path}pfdintextpro-meditalic-webfont.svg#pf_dintext_promedium_italic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}

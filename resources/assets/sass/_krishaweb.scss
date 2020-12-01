@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'KrishaWeb';
+  src:  url('#{$krishaweb-font-path}/KrishaWeb.eot?puz2jp');
+  src:  url('#{$krishaweb-font-path}/KrishaWeb.eot?puz2jp#iefix') format('embedded-opentype'),
+    url('#{$krishaweb-font-path}/KrishaWeb.ttf?puz2jp') format('truetype'),
+    url('#{$krishaweb-font-path}/KrishaWeb.woff?puz2jp') format('woff'),
+    url('#{$krishaweb-font-path}/KrishaWeb.svg?puz2jp#KrishaWeb') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="kw-"], [class*="kw-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'KrishaWeb' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="kw-"], [class*="kw-"]{
+    &.big{
+        font-size:40px;
+    }
+}
+.kw-dashboard {
+  &:before {
+    content: $kw-dashboard;
+  }
+}
+.kw-department {
+  &:before {
+    content: $kw-department;
+  }
+}
+.kw-designation {
+  &:before {
+    content: $kw-designation;
+  }
+}
+.kw-Milestones {
+  &:before {
+    content: $kw-Milestones;
+  }
+}
+.kw-project {
+  &:before {
+    content: $kw-project;
+  }
+}
+.kw-task {
+  &:before {
+    content: $kw-task;
+  }
+}
+.kw-company {
+  &:before {
+    content: $kw-company;
+  }
+}
+.kw-industry {
+  &:before {
+    content: $kw-industry;
+  }
+}
+.kw-people {
+  &:before {
+    content: $kw-people;
+  }
+}
+.kw-projectcategory {
+  &:before {
+    content: $kw-projectcategory;
+  }
+}
+.kw-tasklist {
+  &:before {
+    content: $kw-tasklist;
+  }
+}
+

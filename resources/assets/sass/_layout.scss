@@ -1,0 +1,32 @@
+.page-container{
+    padding: 0 0 70px;
+    @include respond(sm){
+        padding-bottom: 10px;
+    }
+    @include respond(xs){
+        padding-bottom: 10px;
+    }
+    @include respond(x){
+        padding-bottom: 10px;
+    }
+}
+.without_sidebar .page-container{
+    margin-left: 0px;
+}
+.sidebar-visible .page-container{
+	margin-left: 250px;
+	@include respond(sm){
+		margin-left: 0px;
+	}
+	@include respond(xs){
+		margin-left: 0px;
+	}
+	@include respond(x){
+		margin-left: 0px;
+	}
+}
+.page-content-wrapper{
+    width: 100%;
+}
+
+

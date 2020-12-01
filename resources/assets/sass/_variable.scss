@@ -1,0 +1,309 @@
+$base_font_size : 16px;
+
+$pfdintextpro-font-path: "../fonts/pfdintextpro/" !default;
+$proximanova-font-path: "../fonts/proximanova/" !default;
+$krishaweb-font-path: "../fonts/krishaweb/" !default;
+
+$proximanova : 'proximanova';
+$pfdintextpro : 'pfdintextpro';
+$fontawesome : 'FontAwesome';
+
+$ellipsis-line-height: 1.4;
+$ellipsis-line-show: 2;
+
+$light : #ffffff;
+$dark : #000000;
+
+$agodays : #ebc347;
+
+$white: #fff;
+//$black: #222428;
+$black: #000000;
+$logo_green: #009093;
+$logo_yellow: #c39d26;
+$logo_red: #9e1b1f;
+$logo_blue: #008cb1;
+$website: #e36f45;
+
+$baseimg: #f938ab;
+
+/* gradient
+red : #e26568,
+blue : #2dc6ef,
+yellow : #f9d974,
+black : #7b7b7b,
+*/
+
+$twitter: #0293ca;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$googleplus: #ada26d;
+$google: #dd4b39;
+$skype : #00aff0;
+$globe : #d6cab6;
+$pinterest: #cb2027;
+$youtube: #bb0000;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+$instagram: #bc2a8d;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+
+$kw-dashboard: "\e900";
+$kw-department: "\e901";
+$kw-designation: "\e902";
+$kw-Milestones: "\e903";
+$kw-project: "\e904";
+$kw-task: "\e905";
+$kw-company: "\e906";
+$kw-industry: "\e907";
+$kw-people: "\e908";
+$kw-projectcategory: "\e909";
+$kw-tasklist: "\e90a";
+
+
+// 'default': (
+//     'base' : $logo_green,
+//     'link' : lighten($logo_green, 1%),
+//     'agodays' : #ebc347,
+//     'fixhours' : #616161,
+//     'border' : lighten($dark, 98%),
+//     'bodybg' : lighten($dark, 98%),
+//     'basetext' : lighten($dark, 40%),
+//     'color' : lighten($dark, 40%),
+//     'baselight': lighten($logo_green, 40%),
+//     'basedark': lighten($logo_green, 20%),
+//     'dark' : lighten($dark, 40%),
+//     'light' : lighten($dark, 95%),
+//     'formlabel' : lighten($dark, 30%),
+//     'error' : lighten($logo_green, 15%),
+//     'errorarrow' : lighten($logo_green, 15%),
+//     'errortext' : lighten($logo_green, 90%),
+//     'headerbg' : lighten($logo_green, 95%),
+//     'headerlink' : lighten($dark, 5%),
+//     'headertext' : lighten($logo_green, 60%),
+//     'headerborder' : lighten($logo_green, 99%),
+//     'headeractiveborder' : lighten($logo_green, 5%),
+//     'sidebarbg' : lighten($logo_green, 5%),
+//     'sidebartext' : lighten($logo_green, 99%),
+//     'sidebarlink' : lighten($logo_green, 99%),
+//     'sidebarbadge' : lighten($logo_green, 50%),
+//     'sidebarbadgetext' : lighten($logo_green, 5%),
+//     'sidebartitle' : lighten($logo_green, 90%),
+//     'sidebarborder' : lighten($logo_green, 25%),
+//     'pageheaderbg' : lighten($logo_green,  8%),
+//     'pageheadercolor' : lighten($logo_green, 99%),
+//     'pageheaderlink' : lighten($logo_green, 60%),
+//     'footerbg' : lighten($logo_green, 10%),
+//     'footercolor' : lighten($logo_green, 99%),
+//     'footerborder' : lighten($logo_green, 10%),
+//     'footerlink' : lighten($logo_green, 99%),
+//     'colorlight' : lighten($logo_green, 70%),
+//     'colordark' : lighten($logo_green, 20%),
+//     'gradient' : linear-gradient($logo_green, #13bec1),
+//     'gradienthover' : linear-gradient(#13bec1, $logo_green),
+//     'tablegradient' : linear-gradient(#ffffff, #d8d8d8),
+//     'tabletrodd' : lighten($dark, 97%),
+//     'tabletreven' : lighten($logo_green, 95%),
+//     'tablehover' : lighten($dark, 90%),
+//     'tablehovercolor' : lighten($dark, 5%),
+//     'tablehoverfa' : lighten($dark, 50%),
+//     'tableth' : lighten($dark, 35%),
+//     'tablecolor' : lighten($dark, 25%),
+//     'tabactive' : lighten($logo_green, 60%),
+//     'tableborder' : lighten($dark, 85%),
+//     'tablearrow' : lighten($logo_green, 5%),
+//     'tablelink' : lighten($logo_green, 1%),
+//     'btn' : linear-gradient(#13bec1, $logo_green),
+//     'btncolor' : lighten($logo_green, 95%),
+//     'btnhover' : linear-gradient($logo_green, #13bec1),
+//     'btnactive' : linear-gradient($logo_green, #13bec1),
+//     'btncurrent' : linear-gradient($logo_green, #13bec1),
+//     'btnfocus' : linear-gradient($logo_green, #13bec1),
+//     'btnborder' : lighten($logo_green, 1%),
+//     'paginationbtn' : linear-gradient(#13bec1, $logo_green),
+//     'paginationbtncolor' :  lighten($logo_green, 95%),
+//     'paginationbtnhover' : linear-gradient($logo_green, #13bec1),
+//     'paginationbtnhovertext' :  lighten($logo_green, 95%),
+//     'paginationbtnactive' : linear-gradient($logo_green, #13bec1),
+//     'paginationbtnactivetext' :  lighten($logo_green, 95%),
+//     'paginationbtncurrent' : linear-gradient($logo_green, #13bec1),
+//     'paginationbtncurrenttext' :  lighten($logo_green, 95%),
+//     'paginationbtnfocus' : linear-gradient($logo_green, #13bec1),
+//     'paginationbtnfocustext' :  lighten($logo_green, 95%),
+//     'paginationbtnborder' : lighten($logo_green, 1%),
+//     'colVisbtn' : linear-gradient(#13bec1, $logo_green),
+//     'colVisbtncolor' :  lighten($logo_green, 95%),
+//     'colVisbtnhover' : linear-gradient($logo_green, #13bec1),
+//     'colVisbtnactive' : linear-gradient($logo_green, #13bec1),
+//     'colVisbtncurrent' : linear-gradient($logo_green, #13bec1),
+//     'colVisbtnfocus' : linear-gradient($logo_green, #13bec1),
+//     'colVisbtnborder' : lighten($logo_green, 1%),
+//     'selectbtn' :  lighten($logo_green, 95%),
+//     'selectbtncolor' : lighten($dark, 70%),
+//     'selectbtnhover' :  lighten($logo_green, 95%),
+//     'selectbtnactive' :  lighten($logo_green, 95%),
+//     'selectbtncurrent' :  lighten($logo_green, 95%),
+//     'selectbtnfocus' :  lighten($logo_green, 95%),
+//     'selectbtnborder' : lighten($dark, 85%),
+//     'paneltrans' :  lighten($logo_green, 95%),
+//     'paneltranstitle' : lighten($dark, 25%),
+//     'paneltransborder' : lighten($dark, 85%),
+//     'paneltransheading' :  lighten($logo_green, 95%),
+//     'paneltransheadingborder' : lighten($dark, 60%),
+//     'paneltransheadinglink' : lighten($logo_green, 5%),
+//     'paneltransbody' :  lighten($logo_green, 95%),
+//     'paneltransbodytext' : lighten($dark, 50%),
+//     'paneltransbodyborder' : lighten($dark, 80%),
+//     'paneltransfooter' : lighten($dark, 95%),
+//     'paneltransfooterborder' : lighten($dark, 85%),
+//     'paneltransfootertext' : lighten($dark, 50%),
+//     'panelgray' : lighten($logo_green, 95%),
+//     'panelgraytitle' : lighten($dark, 25%),
+//     'panelgrayborder' : lighten($dark, 85%),
+//     'panelgrayheading' : lighten($dark, 95%),
+//     'panelgrayheadinglink' : lighten($dark, 25%),
+//     'panelgrayheadingborder' : lighten($dark, 85%),
+//     'panelgraybody' :  lighten($logo_green, 95%),
+//     'panelgraybodytext' : lighten($dark, 25%),
+//     'panelgraybodyborder' : lighten($dark, 95%),
+//     'panelgrayfooter' : lighten($logo_green, 95%),
+//     'panelgrayfooterborder' : lighten($logo_green, 85%),
+//     'panelgrayfootertext' : lighten($dark, 25%),
+//     'modal' :  lighten($logo_green, 95%),
+//     'modalcontent' :  lighten($logo_green, 95%),
+//     'modalbackdrop' : lighten($dark, 5%),
+//     'modalheaderbg' : lighten($dark, 95%),
+//     'modalheadertext' : lighten($logo_green, 5%),
+//     'modalheadercolor' : lighten($logo_green, 5%),
+//     'modalheaderborder' : lighten($dark, 80%),
+//     'modalbody' :  lighten($logo_green, 95%),
+//     'modalbodytext' : lighten($dark, 40%),
+//     'modalbodylink' : lighten($dark, 40%),
+//     'modalfooterbg' : lighten($dark, 95%),
+//     'modalfooterborder' : lighten($dark, 80%),
+//     'modalfootertext' : lighten($dark, 40%),
+//     'tabsborder' : lighten($dark, 85%),
+//     'tabsborderactive' : lighten($logo_green, 5%),
+//     'tabbg' : lighten($dark, 95%),
+//     'tabbgactive' : lighten($logo_green, 69%),
+//     'tabtext' : lighten($dark, 20%),
+//     'tabtextactive' : lighten($logo_green, 5%),
+//     'lihover' : lighten($dark, 95%),
+//     'lihovertext' : lighten($dark, 40%),
+//     'libg' : lighten($dark, 98%),
+//     'liborder' : lighten($dark, 85%),
+//     'btnedit' : linear-gradient(#ffffff, #f7f7f7),
+//     'btnedithover' : linear-gradient(#f7f7f7, #ffffff),
+//     'btnedittext' : lighten($logo_green, 5%),
+//     'btnview' : linear-gradient(#ffffff, #f7f7f7),
+//     'btnviewhover' : linear-gradient(#f7f7f7, #ffffff),
+//     'btnviewtext' : lighten($logo_green, 5%),
+//     'btndelete' : linear-gradient(#ffffff, #f7f7f7),
+//     'btndeletehover' : linear-gradient(#f7f7f7, #ffffff),
+//     'btndeletetext' : lighten($logo_green, 5%),
+//     'btnadd' : linear-gradient(#00a569, #00653a),
+//     'btnaddhover' : linear-gradient(#00653a, #00a569),
+//     'btnaddtext' : lighten($logo_green, 90%),
+//     'btnclose' : linear-gradient(#bf0000, #930000),
+//     'btnclosehover' : linear-gradient(#930000, #bf0000),
+//     'btnclosetext' : lighten($logo_green, 90%),
+//     'btndefault' : linear-gradient(#13bec1, $logo_green),
+//     'btndefaulthover' : linear-gradient($logo_green, #13bec1),
+//     'btndefaulttext' : lighten($logo_green, 90%),
+//     'btnupload' : linear-gradient(#24b4dc, #0194bd),
+//     'btnuploadhover' : linear-gradient(#0194bd, #24b4dc),
+//     'btnuploadtext' : lighten($logo_green, 90%),
+//     'btnupdate' : linear-gradient(#4e4e4e, #000000),
+//     'btnupdatehover' : linear-gradient(#fd6f74, $logo_green),
+//     'btnupdatetext' : lighten($logo_green, 90%),
+//     'breadcrumb' : lighten($dark, 80%),
+//     'breadcrumbactive' : lighten($dark, 20%),
+//     'breadcrumbborder' : lighten($dark, 80%),
+//     'breadcrumblink' : lighten($dark, 40%),
+//     'breadcrumbcolor' : lighten($dark, 40%),
+//     'formcontrol' : lighten($logo_green, 90%),
+//     'formcontrolborder' : lighten($dark, 85%),
+//     'formcontrolfocus' : lighten($logo_green, 5%),
+//     'formcontroltext' : lighten($dark, 25%),
+//     'inputaddon' : lighten($dark, 85%),
+//     'inputaddonicon' : lighten($dark, 40%),
+//     'avatar' : lighten($logo_green, 45%),
+//     'avatarborder' : lighten($logo_green, 5%),
+//     'dropdownbg' : lighten($logo_green, 90%),
+//     'dropdownli' : lighten($logo_green, 90%),
+//     'dropdownborder' : lighten($dark, 60%),
+//     'dropdownhover' : lighten($logo_green, 5%),
+//     'dropdownhovercolor' : lighten($logo_green, 90%),
+//     'dropdowncolor' : lighten($dark, 20%),
+//     'dropdownactive' : lighten($logo_green, 5%),
+//     'dropdownarrow' : lighten($logo_green, 90%),
+//     'dropdownarrowshadow' : #cccccc,
+//     'datepickerbg' : lighten($logo_green, 85%),
+//     'datepickerhead' : lighten($logo_green, 10%),
+//     'datepickerheadlink' : lighten($logo_green, 90%),
+//     'datepickerheadtext' : lighten($logo_green, 90%),
+//     'datesborder' : lighten($dark, 90%),
+//     'radio' : lighten($logo_green, 5%),
+//     'checkbox' : lighten($logo_green, 5%),
+//     'datepickerweek' : lighten($logo_green, 5%),
+//     'datepickerweektext' : lighten($logo_green, 90%),
+//     'datepickerweeklink' : lighten($logo_green, 90%),
+//     'tooltip' : lighten($logo_green, 5%),
+//     'tooltiparrow' : lighten($logo_green, 5%),
+//     'tooltiptext' : lighten($logo_green, 90%),
+//     'filterbg' : lighten($dark, 95%),
+//     'filterborder' : lighten($dark, 85%),
+//     'filtertotallabel' : lighten($dark, 35%),
+//     'filtertotalstrong' : lighten($dark, 35%),
+//     'filtertext' : lighten($dark, 45%),
+//     'agodaystext' : lighten($logo_green, 90%),
+//     'userlogbg' : lighten($logo_green, 90%),
+//     'userlogname' : lighten($dark, 20%),
+//     'userlogdesignation' : lighten($dark, 20%),
+//     'userlogmailid' : lighten($logo_green, 2%),
+//     'userlogborder' : lighten($dark, 85%),
+//     'taskdetailsidebarlink' : lighten($logo_green, 90%),
+//     'taskdetailsidebarborder' : lighten($logo_green, 25%),
+//     'taskdetailsidebartext' : lighten($logo_green, 80%),
+//     'employeeproject' : lighten($logo_green, 90%),
+//     'employeeprojecttitle' : lighten($dark, 20%),
+//     'employeeprojectborder' : lighten($dark, 85%),
+//     'everythingdate' : lighten($dark, 90%),
+//     'everythingdatetext' : lighten($dark, 25%),
+//     'taskdetailupadte' : lighten($dark, 60%),
+//     'taskdetailfa' : darken($logo_green, 60%),
+//     'milestonenote' : darken($logo_green, 60%),
+//     'milestonenotelabel': darken($logo_green, 60%),
+//     'milestoneborder' : lighten($dark, 90%),
+//     'responsiblelabel' : darken($logo_green, 60%),
+//     'responsibleuser' : darken($logo_green, 60%),
+//     'taskdetailborder' : lighten($dark, 85%),
+//     'taskdetaillink' : lighten($logo_green, 2%),
+//     'taskdetailtext' : lighten($logo_green, 90%),
+//     'currentlisttitle' : darken($logo_green, 60%),
+//     'currentlisttext' : darken($logo_green, 60%),
+//     'currentlistlink' : darken($logo_green, 2%),
+//     'currentlistfa' : darken($logo_green, 60%),
+//     'completelisttitle' : darken($logo_green, 60%),
+//     'completelisttext' : darken($logo_green, 60%),
+//     'completelistlink' : darken($logo_green, 2%),
+//     'completelistfa' : darken($logo_green, 60%),
+//     'taskaddlistborder' : lighten($dark, 90%),
+//     'taskaddlisticontext' :  lighten($logo_green, 2%),
+//     'taskaddlisticonbg' :  lighten($dark, 98%),
+//     'taskaddlisticonborder' :  lighten($dark, 85%),
+//     'filtertotaltimeborder' : lighten($dark, 85%),
+//     'viewuserprofileborder' : lighten($dark, 85%),
+//     'rolebg' : lighten($logo_green, 1%),
+//     'rolecolor' : lighten($logo_green, 90%)
+// ),

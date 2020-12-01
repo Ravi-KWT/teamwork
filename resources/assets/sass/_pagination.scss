@@ -1,0 +1,51 @@
+.pagination{
+    display: block;
+    float: left;
+    margin: 10px 0 0 0;
+    padding: 0px;
+    a{
+        @include font-size(14px);
+        text-align: center;
+        width: auto;
+        display: inline-block;
+        margin-right: 5px;
+        border:0px;
+        @include gradients('paginationbtn');
+        @include color('paginationbtncolor');
+        &:hover{
+            border: 0px;
+            @include gradients('paginationbtnhover');
+            @include color('paginationbtnhovertext');
+        }
+        &.current{
+            @include gradients('paginationbtncurrent');
+            @include color('paginationbtncurrenttext');
+            &:hover{
+                @include gradients('paginationbtnhover');
+                @include color('paginationbtnhovertext');
+            }
+        }
+        &.previous{
+           @include gradients('paginationbtn');
+            &.disabled{
+                @include gradients('paginationbtn');
+                @include color('paginationbtncolor');
+            }
+            &:hover{
+                @include gradients('paginationbtn');
+                @include color('paginationbtncolor');
+            }
+        }
+        &.next{
+            @include gradients('paginationbtn');
+            &.disabled{
+                @include gradients('paginationbtn');
+                @include color('paginationbtncolor');
+            }
+            &:hover{
+                @include gradients('paginationbtn');
+                @include color('paginationbtncolor');
+            }
+        }
+    }
+}

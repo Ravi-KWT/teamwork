@@ -1,0 +1,298 @@
+table{
+    width: 100%;
+}
+table.dataTable {
+    border: 1px solid;
+    width: 100%;
+    @include border-color('tableborder');
+    @include color('tablecolor');
+    tr {
+        @include background-color('tabletrodd');
+        th {
+            @include gradients('tablegradient');
+            @include color('tableth');
+            padding: 15px;
+            @include font-size(14px);
+            font-family: $pfdintextpro;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 0px;
+            &:focus {
+                outline: none;
+            }
+        }
+        td {
+            @include font-size(15px);
+            padding: 10px 15px;
+            text-transform: capitalize;
+            border: 0px;
+            .form-control {
+                box-shadow: none;
+            }
+            .avtar {
+                margin: 0px;
+            }
+            a {
+                text-transform: none;
+                @include color('tablelink');
+                &:hover {
+                    @include color('tablehovercolor');
+                }
+            }
+            .btn {
+                margin-left: 5px;
+                &.btn-success{
+                    padding: 5px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 2px 2px 2px 0px;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    line-height: 0.85;
+                }
+                &.btn-warning{
+                    padding: 5px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 2px 2px 2px 0px;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    line-height: 0.85;
+                }
+            }
+            &:focus {
+                outline: none;
+            }
+            &:last-child {
+                .btn {
+                    @include respond(md) {
+                        margin-left: 0px;
+                    }
+                }
+                @include respond(md) {
+                    padding: 10px 5px 10px 0px;
+                }
+            }
+        }
+        &:nth-child(even) {
+            @include background-color('tabletreven');
+        }
+        &:hover {
+            @include background-color('tablehover');
+            @include color('tablehovercolor');
+            a {
+                @include color('tablelink');
+                .fa {
+                    @include color('tablehoverfa');
+                }
+            }
+        }
+        &.group{
+            td{
+                @include color('tablearrow');
+                padding: 15px;
+                @include font-size(14px);
+                font-family: $pfdintextpro;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+    tfoot{
+        tr{
+            @include gradients('tablegradient');
+            td{
+                border-top: 1px solid;
+                @include border-top-color('tableborder');
+                .filter-total{
+                    padding: 0;
+                    margin: 0;
+                    strong{
+                        @include color('base');
+                    }
+                }
+            }
+        }
+    }
+    &.vc {
+        td {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    &.no-footer{
+        margin: 0px;
+    }
+}
+
+table.dataTable>tbody>tr.child ul {
+    display: block;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    margin: auto;
+    line-height: 16px;
+    @include background-color('base');
+}
+
+.dataTables_filter {
+    margin-right: 0px;
+    input[type="search"] {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 6px 12px;
+        @include font-size(14px);
+        line-height: 1.42857143;
+        color: #555;
+        font-weight: normal;
+        margin: 0px 0px 15px;
+        @include background-color('formcontrol');
+        @include border-color('formcontrolborder');
+        @include color('formcontroltext');
+        &:hover,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            @include border-color('formcontrolfocus');
+        }
+    }
+}
+
+.dataTables_wrapper {
+    @include color('tablecolor');
+    padding: 0px;
+    .dataTables_paginate {
+        display: block;
+        margin: 10px 0 0 0;
+        padding: 0px;
+        .paginate_button {
+            @include font-size(14px);
+            text-align: center;
+            @include gradients('paginationbtn');
+            @include color('paginationbtncolor');
+            width: auto;
+            display: inline-block;
+            margin-right: 5px;
+            border: 0px;
+            padding: 8px 15px;
+            @include border-radius(2px);
+            &.current {
+                @include gradients('paginationbtncurrent');
+                @include color('paginationbtncurrenttext');
+                &:hover {
+                    @include gradients('paginationbtnhover');
+                    @include color('paginationbtnhovertext');
+                }
+            }
+            &.previous {
+                &.disabled {}
+                &:hover {}
+            }
+            &.next {
+                &.disabled {}
+                &:hover {}
+            }
+            &:hover {
+                @include gradients('paginationbtnhover');
+                @include color('paginationbtnhovertext');
+                padding: 8px 15px;
+                border: 0px;
+            }
+        }
+    }
+    .dataTables_info {
+        padding-top: 10px;
+    }
+}
+
+table.dataTable thead .sorting_disabled,
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {}
+
+table.dataTable thead .sorting span,
+table.dataTable thead .sorting_asc span,
+table.dataTable thead .sorting_desc span,
+table.dataTable thead .sorting_asc_disabled span,
+table.dataTable thead .sorting_desc_disabled span {
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-image: none;
+    position: relative;
+    &:before {
+        content: '';
+        left: 0;
+        top: 6px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: absolute;
+    }
+}
+
+table.dataTable thead .sorting span {
+    position: relative;
+    &:before {
+        content: '';
+        left: 0;
+        top: 2px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid;
+        @include border-bottom-color('tablearrow');
+        position: absolute;
+    }
+    &:after {
+        content: '';
+        left: 0;
+        top: 10px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid;
+        @include border-top-color('tablearrow');
+        position: absolute;
+    }
+}
+
+table.dataTable thead .sorting_asc span {
+    &:before {
+        border-bottom: 5px solid;
+        @include border-bottom-color('tablearrow');
+    }
+}
+
+table.dataTable thead .sorting_desc span {
+    &:before {
+        border-top: 5px solid;
+        @include border-top-color('tablearrow');
+    }
+}
+
+button.ColVis_Button {
+    border: 0px solid;
+    @include gradients('colVisbtn');
+    @include color('colVisbtncolor');
+    box-shadow: none;
+    padding: 0 15px;
+    width: 160px;
+    margin: 0;
+    @include border-radius(3px);
+    margin-left: 15px;
+    span {
+        @include color('colVisbtncolor');
+    }
+    &:hover {
+        border: 0px solid;
+        box-shadow: none;
+        padding: 0 15px;
+        @include gradients('colVisbtnactive');
+        @include color('colVisbtncolor');
+    }
+}

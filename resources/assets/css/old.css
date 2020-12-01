@@ -1,0 +1,1205 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?59yqxu');
+    src: url('../fonts/icomoon.eot?59yqxu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?59yqxu') format('truetype'), url('../fonts/icomoon.woff?59yqxu') format('woff'), url('../fonts/icomoon.svg?59yqxu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-company:before {
+    content: "\e906";
+}
+
+.icon-industry:before {
+    content: "\e907";
+}
+
+.icon-people:before {
+    content: "\e908";
+}
+
+.icon-projectcategory:before {
+    content: "\e909";
+}
+
+.icon-tasklist:before {
+    content: "\e90a";
+}
+
+.icon-dashboard:before {
+    content: "\e900";
+}
+
+.icon-department:before {
+    content: "\e901";
+}
+
+.icon-designation:before {
+    content: "\e902";
+}
+
+.icon-Milestones:before {
+    content: "\e903";
+}
+
+.icon-project:before {
+    content: "\e904";
+}
+
+.icon-task:before {
+    content: "\e905";
+}
+
+.button_color {
+    color: #fff;
+    background-color: #F77975;
+}
+
+.datepicker {
+    /*z-index:1156 !important;*/
+    padding: 0 25px 0 0;
+}
+
+.timepicker {
+    z-index: 1151 !important;
+}
+
+.popover.clockpicker-popover.left.clockpicker-align-top {
+    z-index: 11510 !important;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.list-view li {
+    position: relative;
+}
+
+li.categories_p {
+    padding: 0;
+    background-color: transparent;
+}
+
+li.categories_p a {
+    padding: 10px 10px;
+    line-height: normal;
+}
+
+ul.log-indropdown li:last-child > a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+}
+
+li.categories_p p {
+    line-height: 20px;
+}
+
+li.categories_p a:hover {
+    background-color: #daeffd;
+}
+
+li.categories_p:hover {
+    background-color: transparent !important;
+}
+
+.pill {
+    float: right;
+    color: #757575;
+    background-color: rgb(43, 48, 59);
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 0 3px;
+    background-color: #FFF;
+    font-weight: 700;
+}
+
+li.categories_active {
+    background-color: #daeffd;
+}
+
+ul.log-indropdown {}
+
+ul.log-indropdown li {
+    padding: 0;
+}
+
+ul.log-indropdown li:hover {
+    background-color: transparent;
+}
+
+ul.log-indropdown li a {
+    padding-left: 25px;
+}
+
+li.categories_p span.dropdown {
+    width: 20px;
+    height: 20px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: red;
+    z-index: 1200
+}
+
+ul.log-indropdown {
+    display: none;
+}
+
+.dropdown.active {
+    display: block;
+}
+
+
+/* custom css */
+
+.plupload {
+    z-index: 99999;
+}
+
+.grid_action .btn-cons {
+    min-width: inherit;
+}
+
+.grid_list_view {
+    padding: 0;
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    color: #444
+}
+
+.grid_list_view .head {
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0px;
+    background-color: #0DAD9E;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.grid_list_view .head .row {
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.grid_list_view .data_area {
+    text-align: left;
+}
+
+.grid_list_view .data_area .row {
+    padding: 10px 15px;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0;
+}
+
+.grid_list_view a {
+    color: #444;
+    display: block;
+    word-break: break-all;
+}
+
+.grid_list_view .btn {
+    color: #fff;
+    display: inline-block;
+}
+
+.people_id_pic {}
+
+.pic {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.pic_id {
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+.pic img {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d1d1d1
+}
+
+.people_name {}
+
+.people_designation {}
+
+.people_email {}
+
+.people_phone {}
+
+.people_action {}
+
+.people_dob {}
+
+.grid_list_view .datas {
+    float: left;
+    width: 16.66%;
+    font-size: 12px;
+}
+
+
+/* list view */
+
+.grid_list_view .data_area.list_view .row {
+    width: 100%;
+    display: table;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.grid_list_view .data_area.list_view .row:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.grid_list_view .data_area.list_view .row .datas {
+    display: table-cell;
+    vertical-align: middle;
+    /*height: 50px;*/
+}
+
+.grid_list_view .data_area.list_view .row .people_id_pic .pic {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.grid_list_view .data_area.list_view .row .people_id_pic .pic_id {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.grid_list_view .data_area.list_view .row .box.people_name {
+    display: none;
+}
+
+.grid_list_view .data_area.list_view .row .box_real.people_name {
+    display: block;
+}
+
+
+/* grid view */
+
+.grid_list_view .head.grid_view .row {
+    margin-bottom: 2px;
+}
+
+.grid_list_view .head.grid_view .row .datas {
+    width: 25%
+}
+
+.grid_list_view .data_area.grid_view .row:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.grid_list_view .data_area.grid_view .row .datas {
+    width: 25%
+}
+
+.grid_list_view .head.grid_view .row .people_phone {
+    display: none;
+}
+
+.grid_list_view .head.grid_view .row .people_action {
+    display: none;
+}
+
+.grid_list_view .data_area.grid_view .row .people_phone {
+    display: none;
+}
+
+.grid_list_view .data_area.grid_view .row .people_action {
+    display: none;
+}
+
+.grid_list_view .data_area.grid_view .row .box.people_name {
+    display: none;
+}
+
+.grid_list_view .data_area.grid_view .row .box_real.people_name {
+    display: block;
+}
+
+
+/* box view */
+
+.grid_list_view .data_area.box_view .row {
+    width: 32%;
+    border: 1px solid #d1d1d1;
+    float: left;
+    margin: 10px 10px 0px 0px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.grid_list_view .data_area.box_view .row .datas {
+    width: 100%;
+    padding: 5px 0px 10px;
+}
+
+.grid_list_view .data_area.box_view .row .people_id_pic {
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 10px;
+}
+
+.grid_list_view .data_area.box_view .row .people_action {
+    border-top: 1px solid #d1d1d1;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+}
+
+.grid_list_view .data_area.box_view .row .box.people_name {
+    display: inline-block;
+}
+
+.grid_list_view .data_area.box_view .row .box_real.people_name {
+    display: block;
+}
+
+.grid_list_view .head.border_class.box_view {
+    display: none;
+}
+
+
+/*.border_class{
+	border-radius: 70px;
+}*/
+
+.header_class {
+    background-color: #0DAD9E;
+}
+
+span.taskBubble {
+    background-color: #10CFBD;
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 16px
+}
+
+a.task_name {
+    color: rgb(98, 98, 98);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    margin: 0 10px 0;
+    display: inline-block;
+}
+
+a.timer {
+    color: #10CFBD;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/*.topTask {
+    padding: 0 0 0 30px;
+}
+
+.topTask .taskInner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.topTask .taskInner .checkbox label {
+    margin: 0;
+}
+
+.topTask .task_detail {
+    display: inline-block;
+    vertical-align: middle;
+}*/
+
+form.country .tab-content {
+    overflow: visible;
+}
+
+form.country .flagstrap {
+    padding: 12px 0 0;
+}
+
+form.country button.btn.btn-default.btn-md.dropdown-toggle {
+    width: 100%;
+}
+
+form.country .modal-body {
+    z-index: 120;
+}
+
+.col-sm-6 .select2-container {
+    width: 100%;
+}
+
+.tab-content.tab_time_picker {
+    overflow: visible;
+}
+
+
+/*.tab-content.tab_time_picker .tab-pane.slide-left{
+	position: relative;
+}
+.tab-content.tab_time_picker .bootstrap-timepicker-widget.dropdown-menu{
+	position: absolute !important;
+	top: 38px!important;
+	left: 0 !important;
+}*/
+
+.add_project_people {
+    margin: 0;
+    padding: 0;
+}
+
+.add_project_people .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.add_project_people ul {
+    margin: 0;
+    padding: 0;
+}
+
+.add_project_people ul li {
+    list-style: none;
+    margin: 0 14px 30px;
+    border-radius: 5px;
+    position: relative;
+    padding: 0;
+}
+
+.add_project_people ul li label.btn input[type="checkbox"] {
+    display: none;
+}
+
+.add_project_people ul li label.btn {
+    position: absolute;
+    background-color: #10CFBD;
+    width: 15px;
+    height: 15px;
+    left: -10px;
+    top: -10px;
+    z-index: 10;
+    padding: 0;
+}
+
+.add_project_people ul li .btn.active label.btn {
+    background-color: #5B4D91;
+}
+
+.add_project_people ul li .btn.btn-primary {
+    width: 100%;
+    background-color: #40D9CA;
+    border: none;
+}
+
+.add_project_people ul li .people_id_pic {
+    text-align: center;
+    min-height: 120px;
+}
+
+.add_project_people .row [class*='col-']:first-child {
+    padding: 0;
+}
+
+.add_project_people .row [class*='col-']:last-child {
+    padding: 0;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.strikethrough:checked + .strikeThis {
+    text-decoration: line-through
+}
+
+.check-with-label:checked + .label-for-check {
+    text-decoration: line-through;
+}
+
+
+/***** Changes on 16/3/16 *****/
+
+.msupcoming {
+    border-radius: 3px;
+}
+
+.msupcoming-header {
+    background-color: #eac084;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.msupcoming .msbody {
+    background: #f1f1f1;
+    border-top: 1px solid #FFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.msupcoming .msbody .msbodyday {
+    font-size: 40px;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.msupcoming .msbody .msbodyweekday {
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 0 10px;
+}
+
+.milestone-list .checkbox label {
+    display: block;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.milestone-list .checkbox label strong {
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+
+.milestone-tools {
+    opacity: 0;
+    display: none;
+    padding: 0 0 0 22px;
+}
+
+.msname:hover .milestone-tools {
+    opacity: 1;
+    display: block;
+}
+
+.msDaysAway {
+    display: inline-block;
+    background-color: rgb(140, 193, 248);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 2px 5px 2px 20px;
+}
+
+.company_sidebar {}
+
+.company_sidebar .list-view {
+    padding: 0 10px;
+}
+
+.company_sidebar li a {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.company_sidebar li a:hover {
+    background-color: transparent;
+}
+
+.company_sidebar li > ul li:hover > a {
+    color: #000 !important;
+}
+
+.text-master {
+    color: #fff !important;
+}
+
+.logo {
+    width: 125px;
+    height: 100px;
+    margin: 0;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.sidebar-header-controls {
+    position: absolute;
+    top: 0;
+    right: 45px;
+}
+
+.menu-pin .sidebar-header-controls {
+    right: 20px;
+}
+
+
+/*.company_sidebar ul li{
+	position: relative;
+}
+.company_sidebar ul li ul{
+	display: none;
+}*/
+
+i.navtogg {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.dashboard-icon i.icon-dashboard:before {
+    content: '\e900';
+    font-family: 'icomoon';
+    font-size: 15px;
+    position: absolute;
+    top: 13px;
+    left: 6px;
+}
+
+.dashboard-icon {
+    position: relative;
+}
+
+i.icon-department:before {
+    content: '\e901';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-designation:before {
+    content: '\e902';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-Milestones:before {
+    content: '\e903';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-project:before {
+    content: '\e904';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-task:before {
+    content: '\e905';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-company:before {
+    content: '\e906';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-industry:before {
+    content: '\e907';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-people:before {
+    content: '\e908';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-projectcategory:before {
+    content: '\e909';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+i.icon-tasklist:before {
+    content: '\e90a';
+    font-family: 'icomoon';
+    font-size: 100px;
+    color: #10cfbd;
+}
+
+.login-wrapper .bg-pic > img {
+    width: 100% !important;
+    height: inherit !important;
+}
+
+.company_form {}
+
+#company_form label {
+    display: block;
+}
+
+#company_form .input-group {
+    display: block;
+    margin: 0 0 20px;
+}
+
+#company_form .view_input {
+    width: 100%;
+    line-height: 40px;
+    background-color: #fff;
+    border: solid 1px #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    font-size: 14px;
+    color: #626262;
+    font-weight: normal;
+    padding: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#company_form .view_input:hover {
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    color: #626262;
+}
+
+.company-logo {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.company-logo .pic{
+    margin-right: 0px;
+    display: block;
+}
+
+.company-logo .pic img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    /*border-radius:0;*/
+}
+
+.company-logo .pic span {
+    font-size: 18px;
+    color: #626262;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.add_project_people {
+    margin: 0;
+    padding: 0;
+}
+
+.add_project_people .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.add_project_people ul {
+    margin: 0;
+    padding: 0;
+}
+
+.add_project_people ul li {
+    list-style: none;
+    margin: 0 14px 30px;
+    border-radius: 5px;
+    position: relative;
+    padding: 0;
+}
+
+.add_project_people ul li label.btn input[type="checkbox"] {
+    display: none;
+}
+
+.add_project_people ul li label.btn {
+    position: absolute;
+    background-color: #10CFBD;
+    width: 15px;
+    height: 15px;
+    left: -10px;
+    top: -10px;
+    z-index: 10;
+    padding: 0;
+}
+
+.add_project_people ul li .btn.btn-primary.active {
+    box-shadow: none !important;
+    outline-offset: 0 !important;
+}
+
+.add_project_people ul li .btn.btn-primary:focus {
+    box-shadow: none !important;
+    outline-offset: 0 !important;
+}
+
+.add_project_people ul li .btn.active label.btn {
+    background-color: #5B4D91;
+}
+
+.add_project_people ul li .btn.btn-primary {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    box-shadow: none !important;
+}
+
+.add_project_people ul li .btn.active,
+.btn:active {
+    box-shadow: none;
+}
+
+.add_project_people ul li .people_id_pic {
+    text-align: center;
+}
+
+.add_project_people ul li .people_name {
+    font-weight: 400;
+}
+
+.add_project_people ul li .people_designation {
+    color: #808080;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.add_project_people .row [class*='col-']:first-child {
+    padding: 0;
+}
+
+.add_project_people .row [class*='col-']:last-child {
+    padding: 0;
+}
+
+.modal-body .pic img {
+    border-radius: 100px;
+    border: 1px solid #d1d1d1
+}
+
+.modal-body .checkbox label::after {
+    left: 0;
+}
+
+.modal-body .checkbox.check-success {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.sidebar-people {
+    display: block;
+}
+
+.people-img-list {}
+
+.people-img-list ol {
+    margin: 0;
+    padding: 0;
+}
+
+.people-img-list ol li {
+    color: #fff;
+    text-align: left;
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+
+.people-img-list ol li:hover {
+    background-color: transparent;
+}
+
+.people-img-list ol li span {
+    padding-top: 10px;
+    width: 71%;
+    float: left;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.people-img-list ol li .pic {
+    float: left;
+    width: 17%;
+}
+
+.task_name-true {
+    text-decoration: line-through;
+}
+
+.task_name-false {
+    text-decoration: none;
+}
+
+.form-group-default.custom-datepicker {
+    overflow: inherit;
+}
+
+.modal .nav-tabs ~ .tab-content {
+    overflow: inherit;
+    z-index: 2000;
+}
+
+.modal .modal-footer .btn {
+    position: inherit;
+}
+
+
+/******** 21/03/2016 **********/
+
+.list-view li:hover {
+    background: transparent;
+}
+
+.panel-heading.everything-header {
+    background-color: transparent;
+}
+
+.panel-heading.everything-header .panel-title > a {
+    color: #000 !important;
+}
+
+
+/*.panel-heading.everything-header .panel-title > a:hover{
+	background-color: transparent !important;
+}*/
+
+.everything-column .grid_list_view .datas {
+    float: left;
+    width: 14%;
+}
+
+.everything-column-inner .border_class .datas {
+    float: left;
+    width: 14%;
+}
+
+.date_class {
+    color: #656565;
+    font-family: ProximaNova-SemiBold, helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    padding: 10px 0 5px;
+}
+
+
+/*** 28/7/16 *****/
+
+.select2-container .select2-choice {
+    padding: 0;
+    height: 21px;
+    border: none;
+}
+
+.form-group-default-select2 .select2-container {
+    padding: 5px;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+    text-align: center;
+}
+
+.select2-container .select2-choice .select2-arrow b:before {
+    top: 0;
+    right: 0;
+}
+
+label.date-txt {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.topTask .taskInner .btn {
+    padding: 0;
+}
+
+.topTask .taskInner .btn:hover {
+    border: solid 1px transparent;
+}
+
+.topTask .taskInner .dropdown-menu {
+    border: solid 1px #cccccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.topTask .taskInner .dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.new {
+    /*opacity: 0;
+    visibility: hidden;*/
+    -webkit-transition: all 0.3 ease-in-out;
+    -moz-transition: all 0.3 ease-in-out;
+    -o-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+}
+
+.topTask:hover .new {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.3 ease-in-out;
+    -moz-transition: all 0.3 ease-in-out;
+    -o-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+}
+
+.datepicker.log-date-picker {
+    padding: 0 9px 0 0;
+}
+
+.topTask .new {
+    padding: 0 0 0 20px;
+}
+
+.form-group-default.form-group-default-select2 > label {
+    position: relative;
+    padding-left: 0;
+}
+
+.multi-user {
+    border: none;
+    background: #DDDDDD;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+
+.multi-user:focus {
+    background: #ccc;
+}
+
+.multi-user .form-control {
+    color: #333333;
+    margin: 0;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.task_name- {
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.nav.navbar-nav li.active a {
+    background-color: #eee;
+    color: #48b0f7;
+}
+
+.people-img-list li {
+    margin: 0 0 12px;
+}
+
+.people-img-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: solid 2px #fff;
+    margin-right: 15px;
+}
+
+.people-img-list span a {
+    font-size: 14px;
+    color: #fff !important;
+}
+
+.grid_list_view .data_area.list_view .row .box_real.people_name.people_box {
+    display: none;
+}
+
+.grid_list_view .data_area.box_view .row .box_real.people_name {
+    display: none;
+}
+
+.grid_list_view .data_area.box_view .row .box_real.people_name.people_box {
+    display: inline-block;
+    width: inherit;
+    width: 50%;
+}
+
+.grid_list_view .data_area.grid_view .row .box_real.people_name.people_box {
+    display: none;
+}
+
+.project-end-date {
+    overflow: visible !important;
+}
+
+
+/* 02/08/2016 */
+
+
+/*#company_form .projects a{
+    color: #fff !important;
+}
+
+.navbar-nav .active{
+color: #000;
+   background: #d65c14;
+ }
+ .navbar-nav > li > a,
+ .navbar-nav > li > a:hover,
+ .navbar-nav > li > a:focus {
+      color: #000;
+      background: #d65c14;
+ }
+*/
+
+.user_name {
+    display: inline-block;
+}
+
+
+/*15/08/2016*/
+
+.select2-drop {
+    z-index: 10050 !important;
+}

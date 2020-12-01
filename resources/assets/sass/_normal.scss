@@ -1,0 +1,86 @@
+.page-container{
+    padding: 15px 0 40px;
+    position: relative;
+    @include respond(sm){
+        padding-bottom: 10px;
+    }
+    @include respond(xs){
+        padding-bottom: 10px;
+    }
+    @include respond(x){
+        padding-bottom: 10px;
+    }
+}
+.without_sidebar .page-container{
+    padding-left: 0px;
+}
+.sidebar-visible .page-container{
+    padding-left: 250px;
+    @include respond(sm){
+        padding-left: 0px;
+    }
+    @include respond(xs){
+        padding-left: 0px;
+    }
+    @include respond(x){
+        padding-left: 0px;
+    }
+}
+.page-content-wrapper{
+    width: 100%;
+}
+.company-logo{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.nodata{
+    padding-top: 15px;
+    display: block;
+    span{
+        display: block;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+}
+.billable{
+    background-color: #1db288;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    @include border-radius(100%);
+    cursor: pointer;
+    .fa{
+        color: #fff;
+    }
+}
+.nobillable{
+    background-color: #e62424;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    @include border-radius(100%);
+    cursor: pointer;
+    .fa{
+        color: #fff;
+    }
+}
+.no-record-found{
+    display: block;
+    width: 100%;
+    text-align: center;
+    h3{
+        @include font-size(16px);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+}

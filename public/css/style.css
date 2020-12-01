@@ -1,0 +1,41 @@
+.project_search{
+	max-width: 320px;	
+}
+.project_search .form-group form{
+	position: relative;
+}
+.project_search .form-group .form-control{
+	height: 40px;
+	padding-right: 60px;
+}
+.project_search .form-group .search_btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 0;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.alert.alert-user-availableornot{
+    width: 300px;
+    position: fixed;
+    right: -100%;
+    top: 92px;
+    z-index: 2000;
+    padding: 5px;
+    transition:right 1s ease;
+	-webkit-transition:right 1s ease;
+	-moz-transition:right 1s ease;
+	-o-transition:right 1s ease;
+}
+.alert.alert-user-availableornot.visible{
+	right: 15px;
+}
+.alert.alert-user-availableornot .close{
+	right: 0;
+}

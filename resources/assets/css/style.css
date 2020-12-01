@@ -1,0 +1,186 @@
+.page-title{
+    font-size: 30px;
+    color: #fff;
+    text-transform: none;
+}
+
+.home_page{
+    padding:30px 0px;
+}
+.our-employee, .our-projects, .our-clients{
+    padding: 20px;
+    background-color: #fff;
+    border:1px solid #e8e8e8;
+    position: relative;
+}
+.our-employee .icons, .our-projects .icons, .our-clients .icons{
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    width: 70px;
+    height: 80%;
+}
+.our-employee .count, .our-projects .count, .our-clients .count{
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+}
+.our-employee .count{
+    color: #009093;
+}
+.our-projects .count{
+    color: #04a5cf;
+}
+.our-clients .count{
+    color: #f2c217;
+}
+.our-employee .icons{
+    background-color: #009093;
+}
+.our-projects .icons{
+    background-color: #04a5cf;
+}
+.our-clients .icons{
+    background-color: #f2c217;
+}
+.our-employee .title, .our-projects .title, .our-clients .title{
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+.total_hrs{
+    padding: 20px;
+    background-color: #fff;
+    border:1px solid #e8e8e8;
+}
+.panel{
+    box-shadow: none;
+}
+.panel .panel-heading{
+    padding-bottom: 20px 0px 7px 0px
+}
+.panel .panel-body{
+    padding: 20px 0px;
+}
+.panel .panel-heading .panel-title{
+    font-size: 25px;
+    text-transform: none;
+    color: #2f2f2f;
+}
+
+.form-group-default.form-group-default-select2 label{
+    padding: 5px 12px 1px;
+}
+.form-group-default.form-group-default-select2 .select2-container{
+    padding: 0px 12px;
+}
+.form-group-default.form-group-default-select2 .select2-container .select2-choice{
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+.form-group-default.form-group-default-select2 .select2-container .select2-chosen{
+    padding: 0;
+    margin: 0;
+}
+.form-group-default.form-group-default-select2 .select2-container .select2-arrow{
+    top: 0;
+}
+.prompt-popup{
+    background-color: #fafafa;
+    text-align: center;
+}
+.prompt-popup .modal-body{
+    text-align: center;
+}
+
+.agodays{
+    display: inline-block;
+    padding:1px 10px;
+    background-color: #f1f1f1;
+    position: absolute;
+    right:10px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    height: 25px;
+}
+.addEntery{
+    display:block;
+    position: relative;
+    width: 100px;
+}
+.addEntery .new{
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+}
+.taskInner .multi-user{
+    background-color: #f1f1f1;
+}
+.taskInner .taskname{
+    text-transform: uppercase;
+}
+
+
+
+/*.page-user-log{
+    padding:15px;
+    margin: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+.page-user-log .user-pic{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border:1px solid #e8e8e8;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+.page-user-log .user-pic img{
+    width: 70px;
+    height: 70px;
+}
+.page-user-log .user-detail{
+    display: inline-block;
+    vertical-align: top;
+}
+.page-user-log .user-detail .name{
+    display: block;
+    font-size: 25px;
+    color: #363636;
+}
+.page-user-log .user-detail .designation{
+    display: block;
+    font-size: 12px;
+}
+.page-user-log .user-detail .mailid{
+    display: block;
+    font-size: 14px;
+}
+.page-user-log .user-detail .mailid a{
+    color: #9e1b1f;
+}*/
+
+/*This is tempory adding-by baldev*/
+.jumbotron {
+    display:none;
+}
+
+
+.fade{
+    opacity: 1;
+}
+.modal{
+    display: none;
+}
+
+/*added on  30-01-2018*/
+
+
+

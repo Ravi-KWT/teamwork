@@ -1,0 +1,67 @@
+footer {
+    padding: 10px 0px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid;
+    z-index: 999;
+    @include color('footercolor');
+    @include background-color('footerbg');
+    @include border-top-color('footerborder');
+    .list-inline {
+        padding: 0;
+        margin: 0;
+        @include respond(sm){
+            text-align: center;
+        }
+        @include respond(xs){
+            text-align: center;
+        }
+        @include respond(x){
+            text-align: center;
+        }
+    }
+    .icons {
+        margin-right: 5px;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        @include color('footerlink');
+    }
+    .text-right{
+        @include respond(sm){
+            text-align: center;
+            margin-top: 10px;
+        }
+        @include respond(xs){
+            text-align: center;
+            margin-top: 10px;
+        }
+        @include respond(x){
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    @include respond(sm){
+        position: relative;
+    }
+    @include respond(xs){
+        position: relative;
+    }
+    @include respond(x){
+        position: relative;
+    }
+}
+.sidebar-visible{
+    footer{
+        padding-left: 250px;
+        .page-container{
+            padding-left:0px;
+       }
+    }
+}

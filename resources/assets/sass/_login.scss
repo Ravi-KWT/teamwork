@@ -1,0 +1,176 @@
+.login_togg {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 1000;
+    text-align: center;
+    line-height: 55px;
+    @include border-radius(3px);
+    a {
+        color: #000;
+    }
+}
+.login_page {
+    margin: 0;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: table;
+    &.change_pass{
+        padding-top: 50px;
+    }
+    a{
+        cursor: pointer;
+    }
+    label {
+        color: #000;
+    }
+    .logo {
+        text-align: center;
+    }
+    .login_bg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 99;
+    }
+    .forgot {
+        color: #444;
+    }
+    em {
+        display: inline-block;
+        margin-left: 5px;
+        color: red;
+        font-style: normal;
+        @include font-size(14px);
+    }
+    p {
+        color: $logo_green;
+        padding: 0px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0px;
+        @include font-size(14px);
+    }
+    .alert-danger{
+        padding: 5px;
+        @include font-size(13px);
+        margin: 10px 0px 25px;
+    }
+    .alert-success{
+        padding: 5px;
+        @include font-size(13px);
+        margin: 10px 0px 25px;
+    }
+    .form-group{
+        padding-bottom: 15px;
+    }
+    .error {
+        background-color: #009093;
+        color: #fff;
+        bottom: 0;
+        position: relative;
+        &:before{
+            border-bottom-color: #009093;
+        }
+    }
+    .checkbox{
+        label{
+            padding-left: 20px;
+            margin-bottom: 0px;
+        }
+    }
+    .btn {
+        &.btn-default {
+            border: 0px;
+            @include gradient-vertical(#009093, #3db9bb);
+            color: #fff;
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.change_profile_page {
+    padding: 30px 0px;
+    .logo {
+        text-align: center;
+    }
+    .container {
+        background-color: #fff;
+        border: 1px solid #d1d1d1;
+        padding: 30px 30px 70px;
+    }
+    p {
+        color: $logo_green;
+        padding: 0px 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 30px 0px;
+        @include font-size(25px);
+    }
+    .user_profile_pic {
+        border: 1px solid #d1d1d1;
+        background-color: #fff;
+        max-width: 320px;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        .wraps {
+            background-color: #d0d0d0;
+            position: relative;
+        }
+        .notice{
+            position: absolute;
+            bottom: -50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px;
+            @include font-size(12px);
+            left: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+    }
+    .change-pic {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        @include opacity(#000, 0.5);
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        text-transform: uppercase;
+        a {
+            color: #fff;
+            display: block;
+            .fa {
+                margin-left: 10px;
+            }
+        }
+    }
+    .fileextensionerror {
+        position: absolute;
+        width: 100%;
+        bottom: -100px;
+        font-size: 14px;
+        left: 0;
+        color: #fff;
+        text-transform: uppercase;
+        span{
+            padding: 10px;
+            @include opacity(#ff0000, 0.8);
+            display: block;
+        }
+    }
+}

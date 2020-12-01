@@ -1,0 +1,77 @@
+.bootstrap-timepicker-widget {
+    z-index: 1150 !important;
+}
+.modal-backdrop {
+    z-index: 1022;
+    @include background-color('modalbackdrop');
+}
+.modal {
+    text-align: center;
+    padding: 0;
+    z-index: 1050;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+    .modal-content{
+        @include background-color('modal');
+    }
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .modal-body{
+        @include background-color('modalbody');
+        @include color('modalbodytext');
+        a{
+            @include color('modalbodylink');
+        }
+        .btn{
+            @include color('light');
+        }
+        .nav-tabs{
+            margin-bottom: 20px;
+        }
+        ._720kb-datepicker-calendar-header a, .facebook
+        ._720kb-datepicker-calendar-header a:hover{
+            color: #ffffff;
+        }
+    }
+    .modal-header{
+        position: relative;
+        border-bottom: 1px solid;
+        @include border-bottom-color('modalheaderborder');
+        @include color('modalheadertext');
+        @include background-color('modalheaderbg');
+        .close{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            @include color('modalheadertext');
+            opacity: 1;
+        }
+        h4{
+            font-weight: 500;
+            text-transform: uppercase;
+            @include color('modalheadertext');
+        }
+    }
+    .modal-footer{
+        border-top: 1px solid;
+        @include border-top-color('modalfooterborder');
+        @include color('modalfootertext');
+        @include background-color('modalfooterbg');
+    }
+    .dropdown-multiselect{
+        .btn{
+            @include color('selectbtncolor');
+        }
+    }
+}
+.modal-xl {
+    width: 1200px;
+}

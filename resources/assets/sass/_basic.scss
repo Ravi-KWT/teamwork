@@ -1,0 +1,828 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 144px 0 0 0;
+    font-size: $base_font_size;
+    font-family: $proximanova;
+    font-weight: 400;
+    &.bpr {
+        padding-top: 0px;
+    }
+}
+
+.page-container {
+    height: 100%;
+    @include background-color('bodybg');
+    background-color: $baseimg;
+    @include color('basetext');
+    display: table;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+label,
+strong,
+b {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    outline: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    @include font-size(16px);
+}
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
+a {
+    @include color('link');
+    cursor: pointer;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    cursor:pointer !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+button {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:focus.active {
+        outline: none;
+        text-decoration: none;
+        box-shadow: none;
+    }
+}
+
+.tooltip {
+    .tooltip-inner {
+        @include background-color('tooltip');
+        @include color('tooltiptext');
+    }
+    &.top {
+        .tooltip-arrow {
+            border-top: 5px solid;
+            @include border-top-color('tooltiparrow');
+        }
+    }
+    &.bottom {
+        .tooltip-arrow {
+            border-bottom: 5px solid;
+            @include border-bottom-color('tooltiparrow');
+        }
+    }
+    &.left {
+        .tooltip-arrow {
+            border-left: 5px solid;
+            @include border-left-color('tooltiparrow');
+        }
+    }
+    &.right {
+        .tooltip-arrow {
+            border-right: 5px solid;
+            @include border-right-color('tooltiparrow');
+        }
+    }
+}
+
+.input-group-addon {
+    @include background-color('inputaddon');
+    @include border-color('inputaddon');
+    .fa {
+        @include color('inputaddonicon');
+    }
+    .glyphicon {
+        @include color('inputaddonicon');
+    }
+}
+
+.form-inline {
+    .form-group {
+        vertical-align: inherit;
+        margin-right: 10px;
+    }
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    .form-group {
+        padding-bottom: 0px;
+    }
+}
+
+.btn {
+    outline: none;
+    text-decoration: none;
+    @include font-size(14px);
+    @include border-radius(3px);
+    padding: 0px 15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    &.btn-block{
+        display: block;
+    }
+    &.btn-default {
+        border: 0px;
+        @include gradients('btndefault');
+        @include color('btndefaulttext');
+        &:hover,
+        &:focus,
+        &.active {
+            @include gradients('btndefaulthover');
+        }
+    }
+    &.btn-add {
+        @include border-radius(0px);
+        border: 0px solid;
+        box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+        @include gradients('btnadd');
+        @include color('btnaddtext');
+        @include border-radius(3px);
+        .fa {
+            font-size: 16px;
+            line-height: 43px;
+        }
+        &:hover {
+            @include gradients('btnaddhover');
+        }
+    }
+    &.btn-close {
+        @include border-radius(0px);
+        border: 0px solid;
+        box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+        @include gradients('btnclose');
+        @include color('btnclosetext');
+        @include border-radius(3px);
+        .fa {
+            font-size: 16px;
+            line-height: 43px;
+        }
+        &:hover {
+            @include gradients('btnclosehover');
+        }
+    }
+    &.btn-upload {
+        @include border-radius(0px);
+        border: 0px solid;
+        box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+        @include gradients('btnupload');
+        @include color('btnuploadtext');
+        @include border-radius(3px);
+        .fa {
+            font-size: 16px;
+            line-height: 41px;
+        }
+        &:hover {
+            @include gradients('btnuploadhover');
+        }
+    }
+    &.btn-update {
+        @include border-radius(0px);
+        border: 0px solid;
+        box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+        @include gradients('btnupdate');
+        @include color('btnupdatetext');
+        @include border-radius(3px);
+        .fa {
+            font-size: 16px;
+            line-height: 41px;
+        }
+        &:hover {
+            @include gradients('btnupdatehover');
+        }
+    }
+    &.btn_edit {
+        @include border-radius(0px);
+        border: 0px solid;
+        box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+        @include gradients('btnedit');
+        @include color('btnedittext');
+        .fa {
+            font-size: 16px;
+            line-height: 43px;
+        }
+        &:hover {
+            @include gradients('btnedithover');
+        }
+    }
+    &.btn_view {
+        @include border-radius(0px);
+        border: 0px solid;
+        box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+        @include gradients('btnview');
+        @include color('btnviewtext');
+        .fa {
+            font-size: 16px;
+            line-height: 41px;
+        }
+        &:hover {
+            @include gradients('btnviewhover');
+        }
+    }
+    &.btn_delete {
+        @include border-radius(0px);
+        border: 0px solid;
+        box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+        @include gradients('btndelete');
+        @include color('btndeletetext');
+        .fa {
+            font-size: 16px;
+            line-height: 41px;
+        }
+        &:hover {
+            @include gradients('btndeletehover');
+        }
+    }
+    &.btn-trans {
+        background-color: transparent;
+    }
+    &.btn-lg {
+        height: 60px;
+        line-height: 60px;
+    }
+    &.btn-md {
+        height: 40px;
+        line-height: 40px;
+    }
+    &.btn-sm {
+        height: 20px;
+        line-height: 20px;
+    }
+    &.btn-xs {
+        height: 15px;
+        line-height: 15px;
+    }
+    &.btn-primary {
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        color: #ffffff;
+    }
+    &.btn-success {
+        color: #ffffff;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+    }
+    &.btn-info {
+        color: #ffffff;
+        background-color: #5bc0de;
+        border-color: #46b8da;
+    }
+    &.btn-warning {
+        color: #ffffff;
+        background-color: #f0ad4e;
+        border-color: #eea236;
+    }
+    &.btn-danger {
+        color: #ffffff;
+        background-color: #d9534f;
+        border-color: #d43f3a;
+    }
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    @include gradients('btndefault');
+    @include color('btndefaulttext');
+}
+
+.btn-sample .badge {
+    @include background-color('sidebarbadge');
+    @include color('sidebarbadgetext');
+}
+
+.btn-link {
+    @include color('link');
+}
+
+.page-sidebar {
+    z-index: 1000;
+}
+
+footer {
+    z-index: 1002;
+}
+
+._720kb-datepicker-calendar {
+    z-index: 1050;
+    top: 100%;
+    @include background-color('datepickerbg');
+}
+
+._720kb-datepicker-calendar-header,
+._720kb-datepicker-calendar-header:nth-child(odd) {
+    @include background-color('datepickerhead');
+}
+
+._720kb-datepicker-calendar-header a,
+._720kb-datepicker-calendar-header a:hover {
+    @include color('datepickerheadtext');
+}
+
+._720kb-datepicker-calendar-header:nth-child(even) {
+    @include background-color('datepickerhead');
+}
+
+._720kb-datepicker-calendar-days-header {
+    @include background-color('datepickerweek');
+}
+
+._720kb-datepicker-calendar-days-header div {
+    @include color('datepickerheadtext');
+}
+
+._720kb-datepicker-calendar-month span {
+    @include color('datepickerheadtext');
+}
+._720kb-datepicker-calendar-header a, .facebook
+._720kb-datepicker-calendar-header a:hover{
+    color: #ffffff;
+}
+
+._720kb-datepicker-calendar-day._720kb-datepicker-active,
+._720kb-datepicker-calendar-day:hover{
+    @include background-color('base');
+    color: #fff;
+}
+
+.bootstrap-timepicker-meridian,
+.bootstrap-timepicker-minute,
+.bootstrap-timepicker-hour {
+    border: 1px solid;
+    padding: 5px;
+    @include border-radius(0px);
+    @include background-color('base');
+    @include color('baselight');
+    @include border-color('base');
+}
+
+.bootstrap-timepicker-widget table td input {
+    width: 40px;
+}
+
+.datepicker {
+    float: none;
+}
+
+.list-inline > li {
+    vertical-align: top;
+}
+.list-block{
+    li{
+        display: block;
+        padding: 15px;
+        border-top: 1px solid;
+        @include border-color('liborder');
+        @include background-color('libg');
+        @include color('base');
+        a{
+            padding: 0px;
+            display: inline-block;
+            @include color('base');
+        }
+        &:hover {
+            @include background-color('lihover');
+            @include color('lihovertext');
+            a{
+                @include color('base');
+            }
+        }
+        &:first-child{
+            border-top: 0px solid;
+        }
+    }
+}
+.mb_15{
+    margin-bottom: 15px;
+}
+.mb_30 {
+    margin-bottom: 30px;
+}
+.mt_15{
+    margin-top: 15px;
+}
+.mt_30{
+    margin-top: 30px;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.ellipsisH{
+    display: block;
+    display: -webkit-box;
+    max-width: 400px;
+    height: $ellipsis-line-height*$ellipsis-line-show;
+    margin: 0 auto;
+    line-height: $ellipsis-line-height;
+    -webkit-line-clamp: $ellipsis-line-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+    padding: 0;
+}
+
+.page-header {
+    padding: 20px 0px;
+    margin: 0;
+    border-bottom: 0px;
+    position: relative;
+    @include background-color('pageheaderbg');
+    h1 {
+        @include color('pageheadercolor');
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 5px;
+        @include font-size(25px);
+        text-transform: uppercase;
+        a {
+            @include color('pageheaderlink');
+            cursor: pointer;
+        }
+    }
+    h2 {
+        @include color('pageheadercolor');
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: middle;
+        @include font-size(16px);
+        text-transform: uppercase;
+        a {
+            @include color('pageheadercolor');
+            cursor: pointer;
+        }
+    }
+    .loggedhours {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 100%;
+        @include opacity(#000000, 0.5);
+        text-align: center;
+        padding: 0;
+        width: 550px;
+        .row {
+            height: 100%;
+            margin: 0;
+        }
+        [class^="col-"],
+        [class*="col-"] {
+            padding: 0px;
+            height: 100%;
+            [class^="col-"],
+            [class*="col-"] {
+                padding: 0px;
+            }
+        }
+        .fixhours {
+            text-align: center;
+            color: #fff;
+            @include opacity(#000, 0.2);
+            span {
+                display: block;
+                text-transform: uppercase;
+                @include font-size(16px);
+                font-weight: 600;
+                padding: 5px;
+                text-transform: uppercase;
+            }
+            strong {
+                display: block;
+                @include font-size(16px);
+                font-weight: 600;
+                padding: 5px;
+                text-transform: uppercase;
+            }
+        }
+        .billables {
+            @include opacity(#1db288, 1);
+            height: 100%;
+        }
+        .nonbillables {
+            @include opacity(#e62424, 1);
+            height: 100%;
+        }
+        .title {
+            display: block;
+            padding: 5px;
+            text-transform: uppercase;
+            @include font-size(16px);
+            font-weight: 600;
+            color: #fff;
+        }
+        .count {
+            display: block;
+            padding: 5px;
+            text-transform: uppercase;
+            @include font-size(16px);
+            font-weight: 600;
+            color: #fff;
+        }
+        &.not-fix-log{
+            width: 280px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.prompt-popup {
+    @include background-color('modal');
+    @include color('modalbodytext');
+}
+
+.row-border {
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    @include border-bottom-color('border');
+    &.last-child {
+        margin-bottom: 0px;
+        border-bottom: 0px;
+    }
+}
+
+.loader {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1258;
+    left: 0;
+    top: 0;
+    @include opacity(#000, 0.5);
+    background-image: url(/img/demo/progress.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.label {
+    @include color('formlabel');
+}
+
+.error {
+    @include background-color('error');
+    @include color('errortext');
+    padding: 5px 10px;
+    @include font-size(14px);
+    text-transform: capitalize;
+    margin-top: 10px;
+    display: inline-block;
+    @include border-radius(3px);
+    position: absolute;
+    @include animation('shake 1s ease-in');
+    bottom: -20px;
+    z-index: 100;
+    &:before {
+        content: '';
+        border-bottom: 5px solid;
+        @include border-bottom-color('errorarrow');
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: absolute;
+        top: -5px;
+        left: 5px;
+    }
+    strong {
+        font-weight: normal;
+    }
+}
+
+.fullHeight {
+    .row {
+        height: 100%;
+    }
+    [class^="col-"],
+    [class*="col-"] {
+        height: 100%;
+    }
+}
+
+.avtar {
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    .img {
+        display: block;
+        margin: 0 auto;
+        @include border-radius(100%);
+        overflow: hidden;
+        box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+        img {
+            border: 3px solid;
+            @include border-color('avatarborder');
+        }
+        &.avatar-lg {
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &.avatar-md {
+            width: 80px;
+            height: 80px;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &.avatar-sm {
+            width: 60px;
+            height: 60px;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &.avatar-xs {
+            width: 40px;
+            height: 40px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        img {
+            max-width: inherit;
+        }
+    }
+    img {
+        @include border-radius(100%);
+    }
+    &.block {
+        display: block;
+        width: 100%;
+    }
+    &.inline {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+
+.fileUpload {
+    #preview {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+    #container {
+        display: inline-block;
+    }
+    .filesize {
+        display: inline-block;
+        margin: 0 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .avatar {
+        &.inline {
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+
+ul.ColVis_collection {
+    li {
+        @include gradients('colVisbtn');
+        @include color('colVisbtncolor');
+        position: relative;
+        box-shadow: none;
+        border: 0px;
+        input[type="checkbox"] {
+            position: absolute;
+            left: -10px;
+            top: 0;
+        }
+        label {
+            width: 100%;
+            margin: 0px;
+            text-align: left;
+            padding: 0;
+        }
+        span {
+            padding: 0;
+            margin: 0;
+            color: #fff;
+        }
+        &:hover {
+            @include gradients('colVisbtn');
+            @include color('colVisbtncolor');
+            position: relative;
+            box-shadow: none;
+            border: 0px;
+        }
+    }
+}
+
+.notes{
+    font-weight:600;
+    @include font-size(14px);
+    display:block;
+    &.marT{
+        margin-top: 20px;
+    }
+}
+
+body{
+    &.no-page-title{
+        padding-top: 75px;
+        .page-header{
+            display: none;
+        }
+        .page-sidebar{
+            padding-top: 70px;
+        }
+    }
+}
+
+em {
+        display: inline-block;
+        margin-left: 5px;
+        color: red;
+        font-style: normal;
+        @include font-size(14px);
+    }
