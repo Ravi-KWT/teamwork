@@ -36,24 +36,24 @@ class TaskCategoriesController extends Controller
        return response()->json(['categories'=>$categories,'projects'=>$projects]);
     }
 
-    public function postImportExcel()
+    public function postImportExcel(Request $request)
     {
 
-        if(Input::hasFile('import_file')){
-            $extension = Input::file('import_file')->getClientOriginalExtension();
-            $size = Input::file('import_file')->getSize();
+        if($request->hasFile('import_file')){
+            $extension = $request->file('import_file')->getClientOriginalExtension();
+            $size = $request->file('import_file')->getSize();
             if($extension == 'xls' || $extension == 'xlsx' || $extension == 'csv')
             {
                 if($size <= 1000000)
                 {
-                    $path = Input::file('import_file')->getRealPath();
+                    $path = $request->file('import_file')->getRealPath();
                     $data = Excel::load($path, function($reader) {
                     })->get();
                     if(!empty($data) && $data->count()){
                         foreach ($data as $key => $value) {
                             $insert[] = ['name' => $value->tasklist];
                             $category = new TaskCategory;
-                            $category->project_id = Input::get('project_id');
+                            $category->project_id = $request->get('project_id');
                             $category->name = $value->tasklist;
                             $category->save();
                         }
@@ -97,7 +97,7 @@ class TaskCategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        $input= Input::all();
+        $input= $request->all();
 
         $categories=TaskCategory::create($input);
         $categories->save();
@@ -167,8 +167,8 @@ class TaskCategoriesController extends Controller
     public function update(Request $request, $id)
     {
          $category = TaskCategory::find($id);
-         $category->name = Input::get('name');
-         $category->project_id = Input::get('project_id');
+         $category->name = $request->get('name');
+         $category->project_id = $request->get('project_id');
          $category->save();  
          return response()->json(['success'=>true]);      
     }
@@ -199,7 +199,7 @@ class TaskCategoriesController extends Controller
 
     public function addTask(Request $request)
     {
-        $tasks=Task::create(Input::all());
+        $tasks=Task::create($request->all());
         $tasks->users()->sync($request->get('user_id') ? $request->get('user_id') : [0]);
         $tasks->completed = false;
         if(Auth::user()->people->lname)

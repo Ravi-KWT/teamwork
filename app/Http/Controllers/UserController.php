@@ -102,7 +102,7 @@ class UserController extends Controller
         ]);
 
         $user = People::find(Auth::user()->people->id);
-        $user->update(Input::all());
+        $user->update($request->all());
         return redirect('/');
 
     }
