@@ -50,7 +50,7 @@ class IndustriesController extends Controller
      */
     public function store(Request $request)
     {
-            $industries=Industry::create(Input::all());
+            $industries=Industry::create($request->all());
             $industries->save();
             return response()->json(['success'=>true]);
     }
@@ -93,7 +93,7 @@ class IndustriesController extends Controller
     public function update(Request $request, $id)
     {
          $industry = Industry::find($id);
-         $industry->name = Input::get('name');
+         $industry->name = $request->get('name');
          $industry->save();  
          return response()->json(['success'=>true]);      
     }

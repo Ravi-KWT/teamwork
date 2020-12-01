@@ -53,7 +53,7 @@ class DesignationsController extends Controller
     public function store(Request $request)
     {
 
-            $designations=Designation::create(Input::all());
+            $designations = Designation::create($request->all());
             $designations->save();
             return response()->json(['success'=>true]);
     }
@@ -96,7 +96,7 @@ class DesignationsController extends Controller
     public function update(Request $request, $id)
     {
          $designation = Designation::find($id);
-         $designation->name = Input::get('name');
+         $designation->name = $request->get('name');
          $designation->save();  
          return response()->json(['success'=>true]);      
     }

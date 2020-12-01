@@ -60,7 +60,7 @@ class MilestonesController extends Controller
     public function store(Request $request)
     {
 
-        $milestones=Milestone::create(Input::all());
+        $milestones=Milestone::create($request->all());
         $milestones->users()->sync($request->get('user_id') ? $request->get('user_id') : [0]);
         $milestones->save();
         return response()->json(['success'=>true]);
@@ -114,8 +114,8 @@ class MilestonesController extends Controller
     public function update(Request $request, $id)
     {
         $milestone = Milestone::find($request->get('id')); 
-        $milestone->users()->sync(Input::get('user_id') ? Input::get('user_id') : []);
-        $milestone->update(Input::all());
+        $milestone->users()->sync($request->get('user_id') ? $request->get('user_id') : []);
+        $milestone->update($request->all());
         return response()->json(['success'=>true]);     
     }
 
@@ -134,8 +134,8 @@ class MilestonesController extends Controller
     public function postMilestoneStatus(Request $request)
     {
 
-        $milestone = Milestone::find(Input::get('id'));
-        $milestone->completed = Input::get('completed')== 'true' ? false : true;
+        $milestone = Milestone::find($request->get('id'));
+        $milestone->completed = $request->get('completed')== 'true' ? false : true;
         $milestone->save();
         return response()->json(['success'=>true,'status'=>$milestone->completed]);
     }

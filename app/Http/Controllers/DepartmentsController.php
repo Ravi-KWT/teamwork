@@ -52,7 +52,7 @@ class DepartmentsController extends Controller
      */
     public function store(Request $request)
     {
-            $input= Input::all();
+            $input = $request->all();
             $departments=Department::create($input);
             $departments->save();
             return response()->json(['success'=>true]);
@@ -96,7 +96,7 @@ class DepartmentsController extends Controller
     public function update(Request $request, $id)
     {
          $department = Department::find($id);
-         $department->name = Input::get('name');
+         $department->name = $request->get('name');
          $department->save();  
          return response()->json(['success'=>true]);      
     }

@@ -54,7 +54,7 @@ class ProjectCategoriesController extends Controller
     public function store(Request $request)
     {
 
-            $input= Input::all();
+            $input= $request->all();
             $categories=ProjectCategory::create($input);
             $categories->save();
             // return Redirect::route('project-categories.index')->with("success","Record Save");
@@ -118,7 +118,7 @@ class ProjectCategoriesController extends Controller
     public function update(Request $request, $id)
     {
          $category = ProjectCategory::find($id);
-         $category->name = Input::get('name');
+         $category->name = $request->get('name');
          $category->save();
          return response()->json(['success'=>true]);
     }
