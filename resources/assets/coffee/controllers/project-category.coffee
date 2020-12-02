@@ -117,9 +117,10 @@ angular.module 'mis'
 				text: 'You won\'t be able to revert this!'
 				type: 'warning'
 				timer: 7000
+				buttons: [true, "OK"]
 				showCancelButton: true
 				).then((result)->
-					if result.value
+					if result == true
 						$scope.loading = true
 						projectCategory.destroy(id).success (data)->
 							projectCategory.get().success (getData)->

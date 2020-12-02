@@ -116,10 +116,11 @@
 				title: 'Are you Sure?'
 				text: 'You won\'t be able to revert this!'
 				type: 'warning'
+				buttons: [true, "OK"]
 				timer: 7000
 				showCancelButton: true
 				).then((result)->
-					if result.value
+					if result == true
 						$scope.loading = true
 						Department.destroy(id).success (data)->
 							Department.get().success (getData)->

@@ -649,10 +649,11 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           Department.destroy(id).success(function(data) {
             return Department.get().success(function(getData) {
@@ -792,10 +793,11 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           Designation.destroy(id).success(function(data) {
             return Designation.get().success(function(getData) {
@@ -1184,10 +1186,11 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           Industry.destroy(id).success(function(data) {
             return Industry.get().success(function(getData) {
@@ -1382,10 +1385,11 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           milestone.destroy(id).success(function(data) {
             return milestone.get(pId).success(function(getData) {
@@ -1793,10 +1797,11 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           PEOPLE.destroy(id).success(function(data) {
             return PEOPLE.get().success(function(getData) {
@@ -2094,9 +2099,10 @@
         text: 'You won\'t be able to revert this!',
         type: 'warning',
         timer: 7000,
+        buttons: [true, "OK"],
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           projectCategory.destroy(id).success(function(data) {
             return projectCategory.get().success(function(getData) {
@@ -2322,10 +2328,11 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           PROJECT.destroy(id).success(function(data) {
             window.location.href = '/projects';
@@ -2704,10 +2711,11 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
-        if (result.value) {
+        if (result === true) {
           $scope.loading = true;
           taskCategory.destroy(id).success(function(data) {
             return taskCategory.get().success(function(getData) {
@@ -3359,6 +3367,7 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {
