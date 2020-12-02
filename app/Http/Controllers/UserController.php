@@ -83,11 +83,11 @@ class UserController extends Controller
 
          $this->validate($request, [
             'fname'=>'required',
-            'facebook'=>'url',
-            'twitter'=>'url',
-            'website' =>'url',
-            'google'  =>'url',
-            'linkedin'=>'url',
+            'facebook'=>'nullable|url',
+            'twitter'=>'nullable|url',
+            'website' =>'nullable|url',
+            'google'  =>'nullable|url',
+            'linkedin'=>'nullable|url',
             'phone' => 'numeric',
             'mobile' => 'numeric',
         ],

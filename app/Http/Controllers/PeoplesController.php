@@ -422,10 +422,10 @@ class PeoplesController extends Controller
     {
         //
     }
-    public function updateUserProfilePhoto(Request $reuqest)
+    public function updateUserProfilePhoto(Request $request)
     {
         $user = People::find(Auth::user()->people->id);
-        $user->photo=$request->get('photo');
+        $user->photo= $request->get('photo');
         $user->save();
 
     }
