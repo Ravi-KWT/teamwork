@@ -22,15 +22,15 @@ class ThemeController extends Controller
             {
                 $theme = new UserTheme;
                 $theme->user_id = Auth::user()->id;
-                $theme->class = Input::get('name');  
+                $theme->class = $request->get('name');  
             }
             else
             {
-                $theme->class = Input::get('name');
+                $theme->class = $request->get('name');
             }
             $theme->save();
             
-            return response()->json(['success'=>true, 'class_name' => Input::get('name')]);
+            return response()->json(['success'=>true, 'class_name' => $request->get('name')]);
     }
 
 }
