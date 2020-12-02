@@ -2,8 +2,6 @@
 
 namespace App;
 
-use App\Notifications\ResetPasswordNotification;
-use Illuminate\Support\Str;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -94,10 +92,4 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Timer','user_id');
     }
-
-    // public function sendPasswordResetNotification($token)
-    // {
-    //     $token = Str::random(60);
-    //     $this->notify(new ResetPasswordNotification($token));
-    // }
 }
