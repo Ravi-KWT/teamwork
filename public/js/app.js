@@ -503,7 +503,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal('Cancelled', 'Your record is safe ', 'info');
         }
       });
@@ -662,7 +662,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal('Cancelled', 'Your record is safe', 'info');
         }
       });
@@ -806,7 +806,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal('Cancelled', 'Your record is safe', 'info');
         }
       });
@@ -1199,7 +1199,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal('Cancelled', 'Your record is safe', 'info');
         }
       });
@@ -1810,7 +1810,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal('Cancelled', 'Your record is safe', 'info');
         }
       });
@@ -2111,7 +2111,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal('Cancelled', 'Your record is safe', 'info');
         }
       });
@@ -2347,7 +2347,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal("Cancelled", "Your record is safe", "info");
         }
       });
@@ -2725,7 +2725,7 @@
             });
           });
           return swal("Deleted!", "Your record has been deleted.", "success");
-        } else if (result.dismiss === swal.DismissReason.cancel) {
+        } else if (result === null) {
           return swal('Cancelled', 'Your record is safe', 'info');
         }
       });
@@ -3464,6 +3464,7 @@
         title: 'Are you Sure?',
         text: 'You won\'t be able to revert this!',
         type: 'warning',
+        buttons: [true, "OK"],
         timer: 7000,
         showCancelButton: true
       }).then(function(result) {

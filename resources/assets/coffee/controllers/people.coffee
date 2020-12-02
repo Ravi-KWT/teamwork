@@ -375,7 +375,7 @@ angular.module 'mis'
 								$scope.peoples = getData.peoples
 								$scope.loading = false
 						swal("Deleted!", "Your record has been deleted.", "success");
-					else if result.dismiss == swal.DismissReason.cancel
+					else if result == null
   						swal 'Cancelled', 'Your record is safe', 'info'
 				)
 
